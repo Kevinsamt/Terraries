@@ -1,0 +1,259 @@
+body {
+    background-image: url('IMG/Beground.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .container {
+      display: flex;
+      position: relative;
+      top: 50px;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .content {
+      flex: 2;
+      padding-right: 20px;
+  }
+  
+  .content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+  }
+  
+  .content p {
+      margin-bottom: 15px;
+      color: #333;
+  }
+  
+  .image-container {
+      flex: 1;
+      text-align: center;
+  }
+  
+  .image-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caption {
+      background-color: #0033a0;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      text-align: center;
+  }
+  
+  .caption p {
+      margin: 5px 0;
+  }
+
+  .page {
+  position: relative;
+  top: 50px;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Konten disusun secara vertikal */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Susun elemen secara vertikal */
+  align-items: center;
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+.logo-wrapper {
+  margin-bottom: 20px; /* Spasi antara logo dan teks */
+}
+
+.logo {
+  max-width: 150px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+}
+
+.text-content {
+  flex: 1;
+}
+
+#typing-effect {
+  font-size: 2.5em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
+  animation-delay: 0.5s; /* Tambahkan sedikit delay untuk penulisan */
+  opacity: 0; /* Mulai dengan elemen tersembunyi */
+  animation-fill-mode: forwards; /* Tetap tampil setelah animasi selesai */
+}
+
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@keyframes scrollUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#scroll-effect {
+color: #eee;
+  opacity: 0;
+  animation: scrollUp 1s ease-in-out forwards;
+  animation-delay: 4s; /* Tambahkan delay untuk sinkronisasi dengan animasi mesin tik */
+}
+
+
+
+  .icon-sosmed {
+position: relative;
+top: 10px;
+text-align: center; /* Pusatkan ikon secara horizontal dalam div */
+}
+
+.icon-sosmed ul {
+list-style: none; /* Hilangkan bullet point */
+padding: 5px; /* Hilangkan padding */
+margin: 0; /* Hilangkan margin */
+display: flex; /* Gunakan flexbox untuk membuat elemen anak dalam satu baris */
+justify-content: center; /* Ratakan elemen ke tengah */
+}
+
+.icon-sosmed ul li {
+margin: 0 10px; /* Beri jarak antar ikon */
+}
+
+.icon-sosmed ul li a {
+font-size: 24px; /* Ukuran ikon */
+color: #ffffff; /* Warna ikon */
+text-decoration: none; /* Hilangkan underline */
+}
+
+.icon-sosmed ul li a:hover {
+color: #007bff; /* Warna saat ikon di-hover */
+}
+  .navbar {
+    transition: background-color 0.5s ease;
+  }
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  .navbar-brand img {
+    height: 40px;
+    width: auto;
+  }
+  .navbar-brand, .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+  .navbar-brand:hover, .nav-link:hover {
+    color: #4A90E2 !important;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-container {
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .card {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #eee;
+  }
+  .card:last-child {
+    border-right: none;
+  }
+  .card-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #4A90E2;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  .card-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  .card-link {
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  .elemen1 {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 340px;
+}
+
+.img {
+    max-width: 100%; /* Menyesuaikan ukuran gambar */
+    height: auto;
+    display: block; /* Menghapus margin default untuk gambar */
+}
+  .elemen2 {
+    position: absolute;
+    top: 800px;
+    margin-left: 740px;
+}
+
+.img {
+    max-width: 100%; /* Menyesuaikan ukuran gambar */
+    height: auto;
+    display: block; /* Menghapus margin default untuk gambar */
+}
